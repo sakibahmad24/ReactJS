@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>React - Component</title>
+    <title>ReactJS - Component</title>
     <script src="../../js/react.min.js"></script>
     <script src="../../js/react-dom.min.js"></script>
     <script src="../../js/browser.min.js"></script>
@@ -13,12 +13,14 @@
     <div id="container"></div>
 
     <script type="text/babel">
-        var BuckysComponent = React.createClass({
-            render: function() {
-                return (<h2>This is a simple component</h2>);
-            }
-        });
-        ReactDOM.render(<BuckysComponent />, document.getElementById('container'));
+        
+        var Sakib = React.createClass({
+            render: function(){
+                return (<h3>Sakib is a very good guy!</h3>)
+        }
+    })
+
+        ReactDOM.render(<Sakib />, document.getElementById('container'));
     </script>
 
 </body>
