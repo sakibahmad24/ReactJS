@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReactJS - Multiple Component</title>
+    <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+</head>
+<body>
+
+    <div id="container"></div>
+
+    <script type="text/babel">
+        
+        var Sakib = React.createClass({
+            render: function(){
+                return(
+
+                    <div>
+                        <h2>The Following Paragraph is about Kazi Sakib</h2>
+                        <p>Kazi Sakib is really Good</p>
+                    </div>
+                )
+        }
+    })
+
+        ReactDOM.render(<div><Sakib /><Sakib /></div>, document.getElementById('container'));
+    </script>
+
+</body>
+</html>
