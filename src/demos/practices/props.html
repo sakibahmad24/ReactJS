@@ -14,6 +14,19 @@
 
 <script type="text/babel">
 
+    var Name = React.createClass({
+        render: function () {
+            return(
+                <div>
+                    <h1>{this.props.first}</h1>
+                    <h2>{this.props.last}</h2>
+                </div>
+            )
+        }
+    })
+
+    ReactDOM.render(<div><Name first="Kazi" last="Ahmad"/><Name first="Syed" last="Sadman"/></div>, document.getElementById('container'))
+
 
 </script>
 
